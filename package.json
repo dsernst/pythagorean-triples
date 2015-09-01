@@ -1,0 +1,27 @@
+{
+  "name": "pythagorean-triples",
+  "version": "1.0.0",
+  "description": "Generates Pythagorean triples using Euclid's formula",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dsernst/pythagorean-triples.git"
+  },
+  "keywords": [
+    "triples",
+    "euclid",
+    "pythagorean",
+    "trianges",
+    "right",
+    "triplets"
+  ],
+  "author": "David Ernst <npm@dsernst.com> (http://dsernst.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dsernst/pythagorean-triples/issues"
+  },
+  "homepage": "https://github.com/dsernst/pythagorean-triples#readme"
+}
