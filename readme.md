@@ -14,6 +14,6 @@ Uses [Euclid's formula](https://en.wikipedia.org/wiki/Pythagorean_triple#Generat
 
 ```js
 console.log(triples.seed(2, 1)) // [3, 4, 5]
-console.log(pythagoreanTriples(3, 2)) // [5, 12, 13]
+console.log(triples.seed(3, 2)) // [5, 12, 13]
 ```
 
