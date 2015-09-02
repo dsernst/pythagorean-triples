@@ -2,6 +2,10 @@
 
 ## Install
 
+```
+$ npm install pythagorean-triples
+```
+
 ```js
 var triples = require('pythagorean-triples');
 ```
@@ -52,4 +56,13 @@ console.log(triples.upToSum(35))
   [ 6, 8, 10 ],
   [ 5, 12, 13 ],
 ]
+```
+
+## Tests
+
+To run the test suite, first install the dependencies, then run `npm test`:
+
+```
+$ npm install
+$ npm test
 ```
