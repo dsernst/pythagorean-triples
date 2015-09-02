@@ -1,5 +1,3 @@
-var _ = require('lodash');
-
 exports.euclid = function (m, n) {
   if (m < 1 || n < 1) {
     throw new TypeError('m and n must not be less than 1');
@@ -14,6 +12,7 @@ exports.euclid = function (m, n) {
 };
 
 exports.upToM = function (m) {
+  var _ = require('lodash');
   return _.range(1, m + 1).reduce(function (triples, mTemp) {
     return _.range(1, mTemp).reduce(function (innerTriples, n) {
       return innerTriples.concat([exports.euclid(mTemp, n)]);
@@ -32,7 +31,7 @@ exports.isTriple = function (triple) {
 
   return Array.isArray(triple)
     && triple.length === 3
-    && _.every(triple, isPositiveIntegerGte1)
+    && triple.every(isPositiveIntegerGte1)
     && Math.pow(triple[0], 2) + Math.pow(triple[1], 2) === Math.pow(triple[2], 2);
 };
 
