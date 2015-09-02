@@ -10,7 +10,7 @@ var triples = require('pythagorean-triples');
 
 ### triples.euclid(m, n)
 
-Uses [Euclid's formula](https://en.wikipedia.org/wiki/Pythagorean_triple#Generating_a_triple) `a = m^2 - n^2, b = 2mn, c = m^2 + n^2` to generate a triple.
+Generates a Pythagorean triple, using [Euclid's formula](https://en.wikipedia.org/wiki/Pythagorean_triple#Generating_a_triple) `a = m^2 - n^2, b = 2mn, c = m^2 + n^2`.
 
 The returned triple is sorted numerically `a < b < c`.
 
