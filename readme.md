@@ -1,5 +1,7 @@
 # pythagorean-triples
 
+[![NPM Version](https://img.shields.io/npm/v/pythagorean-triples.svg)](https://www.npmjs.com/package/pythagorean-triples)
+
 ## Install
 
 ```
@@ -16,7 +18,7 @@ var triples = require('pythagorean-triples');
 
 Generates a Pythagorean triple, using [Euclid's formula](https://en.wikipedia.org/wiki/Pythagorean_triple#Generating_a_triple) `a = m^2 - n^2, b = 2mn, c = m^2 + n^2`.
 
-The returned triple is sorted numerically `a < b < c`.
+The triple is sorted numerically `a < b < c`.
 
 ```js
 console.log(triples.euclid(2, 1)); // [3, 4, 5]
