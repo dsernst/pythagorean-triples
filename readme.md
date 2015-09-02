@@ -61,6 +61,15 @@ console.log(triples.upToSum(35))
 ]
 ```
 
+### triples.isPrimitive(triple)
+
+Checks if a given triple is primitive. A triple is primitive if all values are [coprime](https://en.wikipedia.org/wiki/Coprime_integers), which means their greatest common divisor is 1.
+
+```js
+console.log(triples.isPrimitive([3, 4, 5]); //true
+console.log(triples.isPrimitive([6, 8, 10]); // false
+```
+
 ## Tests
 
 To run the test suite, first install the dependencies, then run `npm test`:

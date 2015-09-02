@@ -23,3 +23,11 @@ exports.upToM = function (m) {
 exports.upToSum = function (sum) {
   return exports.upToM(Math.ceil(Math.sqrt(sum) / 2));
 };
+
+exports.isPrimitive = function (triple) {
+  var isCoprime = require('is-coprime');
+  var a = triple[0];
+  var b = triple[1];
+  var c = triple[2];
+  return isCoprime(a, b) && isCoprime(a, c) && isCoprime(b, c);
+};

@@ -48,3 +48,12 @@ describe('.upToSum(sum) method', function () {
     assert.deepEqual(triples.upToSum(35), expected);
   });
 });
+
+describe('.isPrimitive(triple) method', function () {
+  it('returns true when the input is primitive', function () {
+    assert(triples.isPrimitive([3, 4, 5]) === true);
+  });
+  it('returns false when the input is not primitive', function () {
+    assert(triples.isPrimitive([6, 8, 10]) === false);
+  });
+});

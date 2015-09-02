@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/dsernst/pythagorean-triples#readme",
   "dependencies": {
+    "is-coprime": "^1.0.0",
     "lodash": "^3.10.1"
   },
   "devDependencies": {
