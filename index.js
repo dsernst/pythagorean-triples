@@ -37,6 +37,9 @@ exports.isTriple = function (triple) {
 };
 
 exports.isPrimitive = function (triple) {
+  if (!exports.isTriple(triple)) {
+    throw new TypeError('non-triples cannot be primitive')
+  }
   var isCoprime = require('is-coprime');
   var a = triple[0];
   var b = triple[1];

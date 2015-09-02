@@ -54,31 +54,42 @@ describe('.isTriple(triple)', function () {
     assert(triples.isTriple([3, 4, 5]) === true);
     assert(triples.isTriple([5, 12, 13]) === true);
   });
+
   it('returns false for non-arrays', function () {
     assert(triples.isTriple('5, 12, 13') === false);
   });
+
   it('returns false for too few values', function () {
     assert(triples.isTriple([5, 13]) === false);
   });
+
   it('returns false for too many values', function () {
     assert(triples.isTriple([5, 12, 13, 15]) === false);
   });
+
   it('returns false for non-integer values', function () {
     assert(triples.isTriple([1.5, 2, 2.5]) === false);
   });
+
   it('returns false for values < 1', function () {
     assert(triples.isTriple([-5, 12, 13]) === false);
     assert(triples.isTriple([0, 7, 7]) === false);
   });
+
   it('returns false for values that cannot make a right angle', function () {
     assert(triples.isTriple([5, 12, 15]) === false);
   });
 });
 
 describe('.isPrimitive(triple)', function () {
+  it('ensures the input is a valid triple first', function () {
+    assert.throws(triples.isPrimitive.bind(null, []));
+  });
+
   it('returns true when the input is primitive', function () {
     assert(triples.isPrimitive([3, 4, 5]) === true);
   });
+
   it('returns false when the input is not primitive', function () {
     assert(triples.isPrimitive([6, 8, 10]) === false);
   });
