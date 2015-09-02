@@ -61,9 +61,29 @@ console.log(triples.upToSum(35))
 ]
 ```
 
+### triples.isTriple(triple)
+
+Checks if the given triple is a valid triple:
+
+- array with three values
+- all values positive integers
+- can make a right angle: `a^2 + b^2 = c^2`
+
+```js
+console.log(triples.isTriple([3, 4, 5]); //true
+console.log(triples.isTriple([5, 12, 13]); // true
+console.log(triples.isTriple('5, 12, 13'); // false, not an array
+console.log(triples.isTriple([5, 13]); // false, too few values
+console.log(triples.isTriple([5, 12, 13, 15]); // false, too many values
+console.log(triples.isTriple([1.5, 2, 2.5]); // false, non-integers
+console.log(triples.isTriple([-5, 12, 13]); // false, not all positive values
+console.log(triples.isTriple([0, 7, 7]); // false, not all positive values
+console.log(triples.isTriple([5, 12, 15]); // false, cannot make a right angle
+```
+
 ### triples.isPrimitive(triple)
 
-Checks if a given triple is primitive. A triple is primitive if all values are [coprime](https://en.wikipedia.org/wiki/Coprime_integers), which means their greatest common divisor is 1.
+Checks if the given triple is primitive. A triple is primitive if all values are [coprime](https://en.wikipedia.org/wiki/Coprime_integers), which means their greatest common divisor is 1.
 
 ```js
 console.log(triples.isPrimitive([3, 4, 5]); //true
