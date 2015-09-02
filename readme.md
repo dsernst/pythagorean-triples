@@ -1,6 +1,7 @@
 # pythagorean-triples
 
 [![NPM Version](https://img.shields.io/npm/v/pythagorean-triples.svg)](https://www.npmjs.com/package/pythagorean-triples)
+[![Build Status](https://travis-ci.org/dsernst/pythagorean-triples.svg?branch=master)](https://travis-ci.org/dsernst/pythagorean-triples)
 
 ## Install
 
