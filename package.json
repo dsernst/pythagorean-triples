@@ -4,7 +4,7 @@
   "description": "Generate Pythagorean triples using Euclid's formula",
   "main": "index.js",
   "scripts": {
-    "test": "mocha tests.js"
+    "test": "./node_modules/mocha/bin/mocha tests.js"
   },
   "repository": {
     "type": "git",
@@ -26,5 +26,8 @@
   "homepage": "https://github.com/dsernst/pythagorean-triples#readme",
   "dependencies": {
     "lodash": "^3.10.1"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.0"
   }
 }
