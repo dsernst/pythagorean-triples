@@ -8,5 +8,5 @@ exports.euclid = function (m, n) {
   var a = Math.abs(m * m - n * n);
   var b = 2 * m * n;
   var c = m * m + n * n;
-  return [a, b, c];
+  return [a, b, c].sort(function (a, b) {return a - b; });
 };
