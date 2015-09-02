@@ -19,3 +19,7 @@ exports.upToM = function (m) {
     }, triples);
   }, []);
 };
+
+exports.upToSum = function (sum) {
+  return exports.upToM(Math.ceil(Math.sqrt(sum) / 2));
+};

@@ -28,10 +28,28 @@ console.log(triples.upToM(4));
 ```
 
 ```js
-[ [ 3, 4, 5 ],
+[
+  [ 3, 4, 5 ],
   [ 6, 8, 10 ],
   [ 5, 12, 13 ],
   [ 8, 15, 17 ],
   [ 12, 16, 20 ],
-  [ 7, 24, 25 ] ]
+  [ 7, 24, 25 ]
+]
+```
+
+### triples.upToSum(sum)
+
+Generates all the triples where `a + b + c <= sum`.
+
+```js
+console.log(triples.upToSum(35))
+```
+
+```js
+[
+  [ 3, 4, 5 ],
+  [ 6, 8, 10 ],
+  [ 5, 12, 13 ],
+]
 ```
