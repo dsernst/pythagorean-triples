@@ -10,3 +10,12 @@ exports.euclid = function (m, n) {
   var c = m * m + n * n;
   return [a, b, c].sort(function (a, b) {return a - b; });
 };
+
+exports.upToM = function (m) {
+  var _ = require('lodash');
+  return _.range(1, m + 1).reduce(function (triples, mTemp) {
+    return _.range(1, mTemp).reduce(function (innerTriples, n) {
+      return innerTriples.concat([exports.euclid(mTemp, n)]);
+    }, triples);
+  }, []);
+};

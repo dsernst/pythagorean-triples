@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/dsernst/pythagorean-triples/issues"
   },
-  "homepage": "https://github.com/dsernst/pythagorean-triples#readme"
+  "homepage": "https://github.com/dsernst/pythagorean-triples#readme",
+  "dependencies": {
+    "lodash": "^3.10.1"
+  }
 }
