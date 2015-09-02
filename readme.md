@@ -26,9 +26,11 @@ console.log(triples.euclid(2, 1)); // [3, 4, 5]
 console.log(triples.euclid(3, 2)); // [5, 12, 13]
 ```
 
-### triples.upToM(m)
+### triples.upToM(m, [iteratorFunc])
 
 Generates all the triples for integers `m` and `n` where `1 <= n < m`.
+
+Takes an optional `iteratorFunc` function that will be called with `(m, n)` on each calculation.
 
 ```js
 console.log(triples.upToM(4));
@@ -45,9 +47,11 @@ console.log(triples.upToM(4));
 ]
 ```
 
-### triples.upToSum(sum)
+### triples.upToSum(sum, [iteratorFunc])
 
-Generates all the triples where `a + b + c <= sum`.
+Generates all the triples where `a + b + c <= sum`. Uses `.upToM` under the hood.
+
+Takes an optional `iteratorFunc` function that will be passed to `.upToM`.
 
 ```js
 console.log(triples.upToSum(35))

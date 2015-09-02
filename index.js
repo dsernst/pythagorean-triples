@@ -13,16 +13,18 @@ exports.euclid = function (m, n) {
   return [a, b, c].sort(function (a, b) {return a - b; });
 };
 
-exports.upToM = function (m) {
+exports.upToM = function (m, cb) {
+  cb = cb || _.noop;
   return _.range(1, m + 1).reduce(function (triples, mTemp) {
     return _.range(1, mTemp).reduce(function (innerTriples, n) {
+      cb(m, n);
       return innerTriples.concat([exports.euclid(mTemp, n)]);
     }, triples);
   }, []);
 };
 
-exports.upToSum = function (sum) {
-  return exports.upToM(Math.ceil(Math.sqrt(sum) / 2));
+exports.upToSum = function (sum, cb) {
+  return exports.upToM(Math.ceil(Math.sqrt(sum) / 2), cb);
 };
 
 exports.isTriple = function (triple) {
