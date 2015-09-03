@@ -2,6 +2,7 @@
 
 [![NPM Version](https://img.shields.io/npm/v/pythagorean-triples.svg)](https://www.npmjs.com/package/pythagorean-triples)
 [![Build Status](https://travis-ci.org/dsernst/pythagorean-triples.svg?branch=master)](https://travis-ci.org/dsernst/pythagorean-triples)
+[![Coverage Status](https://coveralls.io/repos/dsernst/pythagorean-triples/badge.svg?branch=master&service=github)](https://coveralls.io/github/dsernst/pythagorean-triples?branch=master)
 
 ## Install
 
